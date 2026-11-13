@@ -28,7 +28,7 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Survival',
       paraphrase:
-        'A mode dominated by basic survival instincts that produces loose, clan-based survival groups. Dinan’s summary notes that it is not generally active as a way of organizing life today, but that extreme conditions such as famine can push people into it.',
+        'A mode dominated by basic survival instincts that produces loose, clan-based survival groups. It is not generally active as a way of organizing life today, but extreme conditions such as famine can push people into it.',
     },
     organization: {
       principle: 'Survival',
@@ -36,23 +36,22 @@ export const levels: Level[] = [
       leadership: [
         { text: 'Behavior is reactive and focused on basic needs.', source: 'table' },
         {
-          text: 'The slide states that there is no organization. Its diagram shows individuals with no connecting lines.',
+          text: 'No organization (pre-organizational stage).',
           source: 'slide',
         },
       ],
       practices: [
-        { text: 'Self-preservation and safety are the only concerns the slide names.', source: 'slide' },
-        { text: 'The one grouping it mentions is a “community”, not an organization.', source: 'slide' },
+        { text: 'Self-preservation and safety are the only concerns.', source: 'slide' },
       ],
       strengths: [
         {
-          text: 'The notes treat Beige mainly as background to the model rather than as a developed corporate arrangement, so no organizational strengths are listed.',
+          text: 'Because Beige is a pre-organizational state, its strengths are purely reactive. It excels only in extreme crisis situations, providing raw resilience, rapid instinctual response, and tribal cohesion when immediate survival is at stake.',
           source: 'table',
         },
       ],
       tensions: [
         {
-          text: 'Not described as a workplace pattern. Dinan’s summary links this mode to crises such as famine rather than to organizational choices.',
+          text: 'External crises.',
           source: 'dinan',
         },
       ],
@@ -92,19 +91,19 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Tribal',
       paraphrase:
-        'Tribal, animistic and cyclical in outlook, with strong blood bonds and rituals that honor ancestral spirits. In Dinan’s summary, managing this system means respecting clan rules, allegiances and leaders, and carrying any change through rituals, traditions and symbols.',
+        'Tribal, animistic and cyclical in outlook, with strong blood bonds and rituals that honor ancestral spirits. Managing this system means respecting clan rules, allegiances and leaders, and carrying any change through rituals, traditions and symbols.',
     },
     organization: {
       principle: 'Belonging',
       emphasis: 'Belonging and loyalty',
       leadership: [
-        { text: 'Paternal leadership: the slide describes the leader as a father.', source: 'slide' },
+        { text: 'The leader acts as a father figure.', source: 'slide' },
         { text: 'The leader sits at the center of the group, connected to everyone.', source: 'slide' },
       ],
       practices: [
         { text: 'Traditions and informal relationships hold the group together.', source: 'table' },
         { text: 'Rituals and unwritten rules take the place of written procedures.', source: 'slide' },
-        { text: '“Everyone does everything”: roles are not divided.', source: 'slide' },
+        { text: 'Everyone does everything; roles are not divided.', source: 'slide' },
         { text: 'Rewarding one person too visibly can break the group bond.', source: 'dinan' },
       ],
       strengths: [
@@ -152,14 +151,14 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Exploitative',
       paraphrase:
-        'Rugged, authoritarian power, typically run by a top boss and a chain of proxies, with a sharp line between those who have and those who do not. Dinan’s summary says this mode assumes people must be forced to work, and that it is motivated by heroes and conquest.',
+        'Rugged, authoritarian power, typically run by a top boss and a chain of proxies, with a sharp line between those who have and those who do not. This mode assumes people must be forced to work, and is motivated by heroes and conquest.',
     },
     organization: {
       principle: 'Power',
       emphasis: 'Power and personal authority',
       leadership: [
         { text: 'Decisions are centralized and power is concentrated in one person.', source: 'table' },
-        { text: 'The slide casts the leader as the “ultimate decision-maker.”', source: 'slide' },
+        { text: 'The leader is the ultimate decision-maker.', source: 'slide' },
         { text: 'Employees are executors who carry out orders.', source: 'slide' },
       ],
       practices: [
@@ -168,7 +167,7 @@ export const levels: Level[] = [
           text: 'The organizational structure is built around the leader rather than around functions.',
           source: 'slide',
         },
-        { text: '“Whoever has more power is right”, and “results matter most.”', source: 'slide' },
+        { text: 'Whoever has more power is right; results matter most.', source: 'slide' },
       ],
       strengths: [{ text: 'Energy and speed.', source: 'table' }],
       tensions: [
@@ -218,22 +217,22 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Authoritarian',
       paraphrase:
-        'Loyal to a Truth defined by the social group: purposeful, obedient to authority, and ready to sacrifice for the greater good. Dinan’s summary associates it with strict but usually fair discipline, moralistic-prescriptive management and pyramid-shaped organizations, and says it works well in industrial economies.',
+        'Loyal to a Truth defined by the social group: purposeful, obedient to authority, and ready to sacrifice for the greater good. It brings strict but usually fair discipline, moralistic-prescriptive management and pyramid-shaped organizations, and works well in industrial economies.',
     },
     organization: {
       principle: 'Rules',
       emphasis: 'Order and stability',
       leadership: [
-        { text: 'The leader acts as a “system architect” who designs the structure.', source: 'slide' },
+        { text: 'The leader acts as a system architect who designs the structure.', source: 'slide' },
         { text: 'Accountability runs through clearly defined roles.', source: 'table' },
       ],
       practices: [
         { text: 'Defined roles, procedures and accountability.', source: 'table' },
         {
-          text: 'Structure is based on a division of functions; the chart shows units such as sales, marketing and operations.',
+          text: 'Structure is based on a division of functions, such as sales, marketing and operations.',
           source: 'slide',
         },
-        { text: 'Transparency is named as a feature.', source: 'slide' },
+        { text: 'Transparency is valued.', source: 'slide' },
       ],
       strengths: [
         { text: 'Predictability and coordination.', source: 'table' },
@@ -241,7 +240,7 @@ export const levels: Level[] = [
       ],
       tensions: [
         { text: 'Bureaucracy, and rules becoming ends in themselves.', source: 'table' },
-        { text: 'Slow decision-making and “overbearing bureaucracy.”', source: 'slide' },
+        { text: 'Slow decision-making and overbearing bureaucracy.', source: 'slide' },
       ],
     },
     dimensions: {
@@ -292,13 +291,13 @@ export const levels: Level[] = [
       principle: 'Success',
       emphasis: 'Achievement and competition',
       leadership: [
-        { text: 'Strategic leadership: the slide calls the leader a strategist and motivator.', source: 'slide' },
-        { text: 'Goals cascade through the hierarchy; in the chart every position carries a KPI.', source: 'slide' },
+        { text: 'The leader acts as a strategist and motivator.', source: 'slide' },
+        { text: 'Goals cascade through the hierarchy, with a KPI for every position.', source: 'slide' },
       ],
       practices: [
         { text: 'Performance goals and project-based coordination.', source: 'table' },
         { text: 'Competition and winning are explicit values.', source: 'slide' },
-        { text: '“All methods are fair game.”', source: 'slide' },
+        { text: 'All methods are fair game.', source: 'slide' },
       ],
       strengths: [
         { text: 'Initiative, flexibility and growth.', source: 'table' },
@@ -346,19 +345,19 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Communitarian',
       paraphrase:
-        'Humanistic and community-minded, focused on personal growth, equality and environmental concern. Dinan’s summary says leaders become facilitators and hierarchies blur, which can bring inefficiency, and that groups which bog down may swing back to Orange-style individualism.',
+        'Humanistic and community-minded, focused on personal growth, equality and environmental concern. Leaders become facilitators and hierarchies blur, which can bring inefficiency, and groups that bog down may swing back to Orange-style individualism.',
     },
     organization: {
       principle: 'Consensus',
       emphasis: 'Consensus and shared concern',
       leadership: [
-        { text: 'Participatory leadership: the slide calls the leader a servant.', source: 'slide' },
+        { text: 'Participatory leadership; the leader acts as a servant.', source: 'slide' },
         { text: 'Work is organized in teams beneath the leader.', source: 'slide' },
       ],
       practices: [
         { text: 'A collective culture of consensus.', source: 'slide' },
         { text: 'Mission matters more than money.', source: 'slide' },
-        { text: 'The business is framed as mission + business model + employees.', source: 'slide' },
+        { text: 'The business rests on its mission, business model and employees.', source: 'slide' },
         { text: 'Equality and collaboration.', source: 'table' },
       ],
       strengths: [{ text: 'Loyalty and mutual development.', source: 'table' }],
@@ -406,23 +405,22 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Systemic',
       paraphrase:
-        'The first level of what Beck and Cowan call the second tier, marked in Dinan’s summary by a jump in the capacity to hold multiple perspectives. Motivated by learning for its own sake, it thinks in systems, welcomes change, and values distinct talents as contributions to the whole.',
+        'The first level of what Beck and Cowan call the second tier, marked by a jump in the capacity to hold multiple perspectives. Motivated by learning for its own sake, it thinks in systems, welcomes change, and values distinct talents as contributions to the whole.',
     },
     organization: {
       principle: 'Creativity',
       emphasis: 'Integration and contextual flexibility',
       leadership: [
-        { text: 'The slide describes the leader as a “player and creator.”', source: 'slide' },
-        { text: 'Leadership is spread out: in the chart, three people are highlighted rather than one.', source: 'slide' },
+        { text: 'The leader acts as a player and creator.', source: 'slide' },
+        { text: 'Leadership is shared among several people rather than held by one.', source: 'slide' },
       ],
       practices: [
         { text: 'Approaches from earlier levels are combined according to circumstances.', source: 'table' },
-        { text: 'An “integral” approach.', source: 'slide' },
+        { text: 'An integral approach.', source: 'slide' },
         { text: 'Self-actualization for everyone.', source: 'slide' },
       ],
       strengths: [{ text: 'Alignment of goals, rules, strategies and relationships.', source: 'table' }],
       tensions: [
-        { text: 'The notes table names no specific limitation for this level.', source: 'editor' },
         {
           text: 'Yellow-minded people often work at an organization’s periphery, quietly fine-tuning things in ways others find baffling.',
           source: 'dinan',
@@ -463,32 +461,32 @@ export const levels: Level[] = [
     spiralDynamics: {
       theme: 'Holistic',
       paraphrase:
-        'Oriented to global holism and the balance of interlocking life forces. Work must be meaningful to the overall health of life, and Dinan’s summary describes an urge to use collective intelligence on large problems without sacrificing individuality.',
+        'Oriented to global holism and the balance of interlocking life forces. Work must be meaningful to the overall health of life, with an urge to use collective intelligence on large problems without sacrificing individuality.',
     },
     organization: {
       principle: 'Self-organization',
       emphasis: 'Self-organization and responsibility',
       leadership: [
         { text: 'No managers.', source: 'slide' },
-        { text: '“Distributed leadership”: leadership is shared rather than held by one role.', source: 'slide' },
+        { text: 'Distributed leadership, shared rather than held by one role.', source: 'slide' },
       ],
       practices: [
         { text: 'Employees take responsibility for processes and coordinate their own contributions.', source: 'table' },
-        { text: 'A “holistic” approach.', source: 'slide' },
+        { text: 'A holistic approach.', source: 'slide' },
         {
-          text: 'The diagram shows three circles of people inside one larger circle, with no reporting lines.',
+          text: 'Teams form circles within one larger whole, with no reporting lines.',
           source: 'slide',
         },
       ],
       strengths: [{ text: 'Emphasis on distributed responsibility.', source: 'table' }],
       tensions: [
         {
-          text: 'The notes say the detailed mechanisms require further study; the video summary does not spell them out.',
+          text: 'How it works in detail is still unclear and needs further study.',
           source: 'table',
         },
       ],
       caveat:
-        'The video’s title refers to “Teal organizations,” a term from Frederic Laloux’s book Reinventing Organizations. Laloux’s Teal is a separate model with its own definitions. This site does not treat it as identical to Spiral Dynamics’ Turquoise, and the supplied notes do not record how the video relates the two.',
+        'Turquoise is not the same as Teal. “Teal organizations” is Frederic Laloux’s term from Reinventing Organizations, a separate model with its own definitions.',
     },
     dimensions: {
       authority: { text: 'No managers; leadership is distributed.', source: 'slide' },
