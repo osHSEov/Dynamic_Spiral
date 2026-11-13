@@ -10,6 +10,8 @@ interface ImageDialogProps {
   height: number;
   alt: string;
   filename?: string;
+  /** Put the children under the image instead of in a side column. */
+  stacked?: boolean;
   children?: ReactNode;
 }
 
@@ -20,7 +22,7 @@ interface ImageDialogProps {
  * - Focus returns to the element that opened it.
  * - Clicking the dimmed backdrop also closes it.
  */
-export function ImageDialog({ open, onClose, title, path, width, height, alt, filename, children }: ImageDialogProps) {
+export function ImageDialog({ open, onClose, title, path, width, height, alt, filename, stacked = false, children }: ImageDialogProps) {
   const ref = useRef<HTMLDialogElement>(null);
   const returnFocus = useRef<HTMLElement | null>(null);
   const closeBtn = useRef<HTMLButtonElement>(null);
@@ -75,7 +77,7 @@ export function ImageDialog({ open, onClose, title, path, width, height, alt, fi
             <span className="visually-hidden"> enlarged image (Escape)</span>
           </button>
         </header>
-        <div className="image-dialog__body">
+        <div className={`image-dialog__body ${stacked ? 'image-dialog__body--stacked' : ''}`}>
           {open && (
             <SafeImage path={path} width={width} height={height} alt={alt} filename={filename} className="image-dialog__img" />
           )}

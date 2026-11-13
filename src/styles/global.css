@@ -858,15 +858,6 @@ button {
   grid-template-columns: minmax(0, 1fr);
   gap: 18px;
 }
-@container (min-width: 720px) {
-  .shot {
-    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-    align-items: start;
-  }
-  .shot__caption {
-    grid-column: 1 / -1;
-  }
-}
 .shot__media {
   min-width: 0;
 }
@@ -911,69 +902,10 @@ button {
 .shot__caption p {
   margin-bottom: 0.6em;
 }
-.shot__limit {
-  font-size: 0.88rem;
-  color: var(--ink-3);
-}
 .shot__caption .credit {
   margin-bottom: 0.8rem;
 }
 
-.slide-text {
-  min-width: 0;
-}
-.slide-text table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  line-height: 1.35;
-}
-.slide-text__caption {
-  text-align: left;
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--rule);
-}
-.slide-text th {
-  text-align: left;
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  padding: 8px 8px 4px 0;
-}
-.slide-text td {
-  padding: 7px 8px 7px 0;
-  border-top: 1px solid var(--rule);
-  vertical-align: top;
-  width: 50%;
-}
-.slide-text__ru {
-  font-family: var(--sans);
-  font-weight: 600;
-  color: var(--ink);
-}
-.slide-text__heading .slide-text__ru {
-  letter-spacing: 0.04em;
-}
-.slide-text__note {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--ink-3);
-  font-style: italic;
-  margin-top: 2px;
-}
-.slide-text__group th {
-  padding-top: 14px;
-  border-top: 1px solid var(--rule-strong);
-}
 
 /* Missing image fallback */
 .img-fallback {
@@ -1082,6 +1014,16 @@ button {
 }
 .image-dialog__aside {
   font-size: 0.92rem;
+}
+.image-dialog__body--stacked {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.image-dialog__body--stacked .image-dialog__img {
+  max-height: calc(100vh - 200px);
+}
+.image-dialog__body--stacked .image-dialog__aside p {
+  margin: 0;
 }
 @media (max-width: 860px) {
   .image-dialog__body {

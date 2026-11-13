@@ -47,10 +47,10 @@ export const sources: Source[] = [
     key: 'slide',
     label: 'Litti Pro video (slide)',
     citation:
-      'Screenshots from Sergey Litti / Litti Pro, “Spiral Dynamics. Teal Organizations. Change Management” (video).',
-    role: 'The eight organizational diagrams. Russian slide text is transcribed and translated beside each image.',
+      'Slides adapted from Sergey Litti / Litti Pro, “Spiral Dynamics. Teal Organizations. Change Management” (video), translated into English.',
+    role: 'The eight organizational diagrams shown in the explorer.',
     notes:
-      'Supplied by the project owner as screenshots. Timestamps were not recorded. Reuse permission not independently verified.',
+      'English versions of the original Russian slides, with a slightly redrawn layout, supplied by the project owner. Timestamps were not recorded. Reuse permission not independently verified.',
   },
   {
     key: 'portrait',
@@ -63,4 +63,4 @@ export const sources: Source[] = [
 ];
 
 export const screenshotSource =
-  'Screenshot from Sergey Litti / Litti Pro, “Spiral Dynamics. Teal Organizations. Change Management” (video). Timestamp not recorded. Reuse permission not independently verified.';
+  'Adapted from a slide in Sergey Litti / Litti Pro, “Spiral Dynamics. Teal Organizations. Change Management” (video), translated into English. Timestamp not recorded. Reuse permission not independently verified.';

@@ -11,8 +11,8 @@ import { screenshotSource } from './sources';
  *   deliberately NOT included (they are 1990s-era estimates, not data).
  * - Dinan's lists of example people, groups and countries are omitted:
  *   several are evaluative, and none are needed to explain the levels.
- * - Slide text is transcribed only where legible. Cropped text is recorded
- *   in `limitations`, never reconstructed.
+ * - Slide wording follows the English versions of the slides
+ *   (source-materials/levels_modified).
  */
 export const levels: Level[] = [
   {
@@ -41,8 +41,8 @@ export const levels: Level[] = [
         },
       ],
       practices: [
-        { text: 'Self-survival and safety are the only concerns the slide names.', source: 'slide' },
-        { text: 'The one grouping it mentions is a “community” (община), not an organization.', source: 'slide' },
+        { text: 'Self-preservation and safety are the only concerns the slide names.', source: 'slide' },
+        { text: 'The one grouping it mentions is a “community”, not an organization.', source: 'slide' },
       ],
       strengths: [
         {
@@ -65,19 +65,17 @@ export const levels: Level[] = [
     },
     screenshot: {
       src: 'assets/levels/01-beige.png',
-      originalFilename: 'levels/biege.png',
-      width: 1088,
-      height: 963,
-      headingRu: 'ВЫЖИВАНИЕ',
-      headingEn: 'Survival',
-      lines: [
-        { ru: 'Самовыживание', en: 'Self-survival', note: 'Fending for oneself.' },
-        { ru: 'Безопасность', en: 'Safety' },
-        { ru: 'Организации нет', en: 'There is no organization' },
-        { ru: 'Община', en: 'Community', note: 'A loose community or commune, not a formal body.' },
+      originalFilename: 'levels_modified/biege.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Survival',
+      labels: [
+        'Self-preservation',
+        'Safety',
+        'No organization',
+        'Community',
       ],
-      diagram: 'Five person icons scattered on the right, with no lines connecting them.',
-      limitations: 'A thin red shape at the right edge is cropped and cannot be identified.',
+      diagram: 'Five unconnected person icons in a loose cluster, with no lines between them.',
     },
   },
 
@@ -111,7 +109,7 @@ export const levels: Level[] = [
       ],
       strengths: [
         { text: 'Cohesion and mutual care.', source: 'table' },
-        { text: 'Group solidarity (сплоченность группы).', source: 'slide' },
+        { text: 'Group cohesion.', source: 'slide' },
       ],
       tensions: [
         { text: 'Dependence on the leader.', source: 'table' },
@@ -126,26 +124,18 @@ export const levels: Level[] = [
     },
     screenshot: {
       src: 'assets/levels/02-purple.png',
-      originalFilename: 'levels/purple.png',
-      width: 1244,
-      height: 1029,
-      headingRu: 'ПРИНАДЛЕЖНОСТЬ',
-      headingEn: 'Belonging',
-      lines: [
-        { ru: 'Племя', en: 'Tribe' },
-        { ru: 'Сплоченность группы', en: 'Group cohesion' },
-        {
-          ru: 'Ритуалы, неписанные правила',
-          en: 'Rituals, unwritten rules',
-          note: 'Transcribed as spelled on the slide.',
-        },
-        { ru: 'Лидер - отец', en: 'Leader as father' },
-        { ru: 'Все делают за всё', en: 'Everyone does everything', note: 'Roles are not divided.' },
+      originalFilename: 'levels_modified/purple.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Belonging',
+      labels: [
+        'Tribe',
+        'Group cohesion',
+        'Rituals and unwritten rules',
+        'Leader as father',
+        'Everyone does everything',
       ],
-      diagram:
-        'A highlighted person in the center, linked by two-way arrows to four others, who are also linked to each other in a circle.',
-      limitations:
-        'A further line of text along the bottom edge is cut off and not legible, so it is not transcribed. Part of the presenter is visible at the left edge.',
+      diagram: 'A highlighted leader in the center, linked by two-way arrows to four others, who are also linked to one another in a circle.',
     },
   },
 
@@ -169,16 +159,16 @@ export const levels: Level[] = [
       emphasis: 'Power and personal authority',
       leadership: [
         { text: 'Decisions are centralized and power is concentrated in one person.', source: 'table' },
-        { text: 'The slide casts the leader as an “arbiter of fates.”', source: 'slide' },
+        { text: 'The slide casts the leader as the “ultimate decision-maker.”', source: 'slide' },
         { text: 'Employees are executors who carry out orders.', source: 'slide' },
       ],
       practices: [
         { text: 'Direct control by the leader, exercised through loyal executors.', source: 'table' },
         {
-          text: 'Structure is built around a personality: in the slide’s chart, the second tier is labelled with personal names, not functions.',
+          text: 'The organizational structure is built around the leader rather than around functions.',
           source: 'slide',
         },
-        { text: '“Whoever has more rights is right”, and “what matters is the result.”', source: 'slide' },
+        { text: '“Whoever has more power is right”, and “results matter most.”', source: 'slide' },
       ],
       strengths: [{ text: 'Energy and speed.', source: 'table' }],
       tensions: [
@@ -187,40 +177,31 @@ export const levels: Level[] = [
       ],
     },
     dimensions: {
-      authority: { text: 'Concentrated in one leader; whoever has more rights is right; whoever has more "might" is right.', source: 'slide' },
+      authority: { text: 'Concentrated in one leader; whoever has more power is right.', source: 'slide' },
       rules: { text: 'Structure is built around the person in charge.', source: 'slide' },
       incentives: { text: 'Results above all, delivered by loyal executors.', source: 'table' },
       cooperation: { text: 'Top-down command; employees execute.', source: 'slide' },
     },
     screenshot: {
       src: 'assets/levels/03-red.png',
-      originalFilename: 'levels/red.png',
-      width: 1384,
-      height: 1264,
-      headingRu: 'СИЛА',
-      headingEn: 'Power',
-      lines: [
-        { ru: 'Концентрация власти', en: 'Concentration of power' },
-        { ru: 'Главное - результат', en: 'What matters is the result' },
-        {
-          ru: 'Тот прав, у кого больше прав',
-          en: 'Whoever has more rights is right',
-          note: 'A pun: “прав” means both “is right” and “of rights (authority).”',
-        },
-        { ru: 'Лидер – вершитель судеб', en: 'Leader as arbiter of fates' },
-        { ru: 'Орг. структура вокруг личности', en: 'Org. structure built around a personality' },
-        { ru: 'Сотрудник - исполнитель', en: 'Employee as executor', note: 'Someone who carries out orders.' },
+      originalFilename: 'levels_modified/red.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Power',
+      labels: [
+        'Concentration of power',
+        'Results matter most',
+        'Whoever has more power is right',
+        'Leader as ultimate decision-maker',
+        'Organizational structure built around the leader',
+        'Employee as executor',
+        'CEO',
+        'Manager',
+        'Sales',
+        'Production',
+        'Supply',
       ],
-      chartLabels: [
-        { ru: 'Ген. директор', en: 'General director (CEO)' },
-        { ru: 'Иванов П.С.', en: 'Ivanov P.S.', note: 'A personal name.' },
-        { ru: 'Смирнов В.М.', en: 'Smirnov V.M.', note: 'A personal name.' },
-        { ru: 'Продажи', en: 'Sales' },
-        { ru: 'Производство', en: 'Production' },
-        { ru: 'Снабжение', en: 'Procurement', note: 'Appears twice in the chart.' },
-      ],
-      diagram:
-        'A top-down chart: the general director at the top, two subordinates identified by personal names, and four people below them labelled by function.',
+      diagram: 'A top-down chart: the CEO at the top, two managers below, and four people at the bottom, three of them labelled Sales, Production and Supply.',
     },
   },
 
@@ -249,7 +230,7 @@ export const levels: Level[] = [
       practices: [
         { text: 'Defined roles, procedures and accountability.', source: 'table' },
         {
-          text: 'Structure is based on a division of functions; the chart shows units such as sales, marketing and a workshop.',
+          text: 'Structure is based on a division of functions; the chart shows units such as sales, marketing and operations.',
           source: 'slide',
         },
         { text: 'Transparency is named as a feature.', source: 'slide' },
@@ -260,7 +241,7 @@ export const levels: Level[] = [
       ],
       tensions: [
         { text: 'Bureaucracy, and rules becoming ends in themselves.', source: 'table' },
-        { text: 'Slow decisions and “overwhelming bureaucracy.”', source: 'slide' },
+        { text: 'Slow decision-making and “overbearing bureaucracy.”', source: 'slide' },
       ],
     },
     dimensions: {
@@ -271,33 +252,24 @@ export const levels: Level[] = [
     },
     screenshot: {
       src: 'assets/levels/04-blue.png',
-      originalFilename: 'levels/blue.png',
-      width: 1290,
-      height: 1184,
-      headingRu: 'ПРАВИЛА',
-      headingEn: 'Rules',
-      lines: [
-        { ru: 'Правила и стабильность', en: 'Rules and stability' },
-        {
-          ru: 'Орг. структура основана на распределении функций',
-          en: 'Org. structure based on the division of functions',
-        },
-        { ru: 'Лидер - системный архитектор', en: 'Leader as system architect' },
-        { ru: 'Прозрачность', en: 'Transparency' },
-        { ru: 'Долгие решения', en: 'Slow decisions', note: 'Literally “long decisions.”' },
-        { ru: 'Подавляющая бюрократия', en: 'Overwhelming bureaucracy', note: 'Also “oppressive.”' },
+      originalFilename: 'levels_modified/blue.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Rules',
+      labels: [
+        'Rules and stability',
+        'Organizational structure based on division of functions',
+        'Leader as system architect',
+        'Transparency',
+        'Slow decision-making',
+        'Overbearing bureaucracy',
+        'CEO',
+        'Deputy CEO',
+        'Sales',
+        'Marketing',
+        'Workshop / Operations',
       ],
-      chartLabels: [
-        { ru: 'Ген. директор', en: 'General director (CEO)' },
-        { ru: 'Зам. директора', en: 'Deputy director' },
-        { ru: 'Продажи', en: 'Sales' },
-        { ru: 'Маркетинг', en: 'Marketing' },
-        { ru: 'Цех 1', en: 'Workshop 1', note: 'A production shop or unit.' },
-      ],
-      diagram:
-        'A functional hierarchy: the general director, two deputy directors, and units below them labelled by function.',
-      limitations:
-        'The right edge is cropped: the second deputy director’s label and one lower label are cut off and not transcribed.',
+      diagram: 'A functional hierarchy: the CEO, two deputy CEOs, and units below them labelled Sales, Marketing and Workshop / Operations.',
     },
   },
 
@@ -326,7 +298,7 @@ export const levels: Level[] = [
       practices: [
         { text: 'Performance goals and project-based coordination.', source: 'table' },
         { text: 'Competition and winning are explicit values.', source: 'slide' },
-        { text: '“Any means will do” (все методы хороши).', source: 'slide' },
+        { text: '“All methods are fair game.”', source: 'slide' },
       ],
       strengths: [
         { text: 'Initiative, flexibility and growth.', source: 'table' },
@@ -339,26 +311,25 @@ export const levels: Level[] = [
     },
     dimensions: {
       authority: { text: 'Strategic leadership through performance goals.', source: 'table' },
-      rules: { text: 'Flexible means, measured ends: any means will do.', source: 'slide' },
+      rules: { text: 'Flexible means, measured ends: all methods are fair game.', source: 'slide' },
       incentives: { text: 'KPIs at every level and at every whim; winning.', source: 'slide' },
       cooperation: { text: 'Internal competition, which can turn destructive.', source: 'table' },
     },
     screenshot: {
       src: 'assets/levels/05-orange.png',
-      originalFilename: 'levels/orange.png',
-      width: 1290,
-      height: 1131,
-      headingRu: 'УСПЕХ',
-      headingEn: 'Success',
-      lines: [
-        { ru: 'Конкуренция', en: 'Competition' },
-        { ru: 'Победа', en: 'Victory' },
-        { ru: 'Все методы хороши', en: 'All methods are good', note: 'Idiomatically, “any means will do.”' },
-        { ru: 'Лидер – стратег, мотиватор', en: 'Leader as strategist, motivator' },
-        { ru: 'Выгорание', en: 'Burnout' },
+      originalFilename: 'levels_modified/orange.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Success',
+      labels: [
+        'Victory',
+        'Competition',
+        'All methods are fair game',
+        'Leader as strategist and motivator',
+        'Burnout',
+        'KPI',
       ],
-      chartLabels: [{ ru: 'KPI', en: 'Key performance indicator', note: 'Shown beside every position.' }],
-      diagram: 'A hierarchy in which every position, from the top down, is tagged with a KPI.',
+      diagram: 'A hierarchy in which every position, from the CEO down, is tagged with a KPI.',
     },
   },
 
@@ -378,14 +349,14 @@ export const levels: Level[] = [
         'Humanistic and community-minded, focused on personal growth, equality and environmental concern. Dinan’s summary says leaders become facilitators and hierarchies blur, which can bring inefficiency, and that groups which bog down may swing back to Orange-style individualism.',
     },
     organization: {
-      principle: 'Agreement',
-      emphasis: 'Agreement and shared concern',
+      principle: 'Consensus',
+      emphasis: 'Consensus and shared concern',
       leadership: [
         { text: 'Participatory leadership: the slide calls the leader a servant.', source: 'slide' },
         { text: 'Work is organized in teams beneath the leader.', source: 'slide' },
       ],
       practices: [
-        { text: 'A collective culture of agreement.', source: 'slide' },
+        { text: 'A collective culture of consensus.', source: 'slide' },
         { text: 'Mission matters more than money.', source: 'slide' },
         { text: 'The business is framed as mission + business model + employees.', source: 'slide' },
         { text: 'Equality and collaboration.', source: 'table' },
@@ -393,7 +364,7 @@ export const levels: Level[] = [
       strengths: [{ text: 'Loyalty and mutual development.', source: 'table' }],
       tensions: [
         { text: 'Slow decisions and difficulty resolving trade-offs.', source: 'table' },
-        { text: 'Unhurriedness and declining discipline.', source: 'slide' },
+        { text: 'An unhurried pace and reduced discipline.', source: 'slide' },
       ],
     },
     dimensions: {
@@ -404,22 +375,19 @@ export const levels: Level[] = [
     },
     screenshot: {
       src: 'assets/levels/06-green.png',
-      originalFilename: 'levels/green.png',
-      width: 1322,
-      height: 1247,
-      headingRu: 'СОГЛАСИЕ',
-      headingEn: 'Agreement',
-      lines: [
-        { ru: 'Коллективная культура согласия', en: 'A collective culture of agreement' },
-        { ru: 'Миссия важнее денег', en: 'Mission matters more than money' },
-        { ru: 'Миссия + бизнес-модель + сотрудники', en: 'Mission + business model + employees' },
-        { ru: 'Лидер – служитель', en: 'Leader as servant' },
-        { ru: 'Неторопливость', en: 'Unhurriedness' },
-        { ru: 'Снижение дисциплины', en: 'Declining discipline' },
-      ],
-      chartLabels: [
-        { ru: 'Лидер', en: 'Leader' },
-        { ru: 'Команда', en: 'Team', note: 'Two teams, each drawn as a box.' },
+      originalFilename: 'levels_modified/green.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Consensus',
+      labels: [
+        'Collective culture of consensus',
+        'Mission matters more than money',
+        'Leader as servant',
+        'Unhurried pace',
+        'Mission + business model + employees',
+        'Reduced discipline',
+        'Leader',
+        'Team',
       ],
       diagram: 'A leader above two boxed teams, each with its own small internal hierarchy.',
     },
@@ -445,12 +413,12 @@ export const levels: Level[] = [
       emphasis: 'Integration and contextual flexibility',
       leadership: [
         { text: 'The slide describes the leader as a “player and creator.”', source: 'slide' },
-        { text: 'Leadership is spread out: in the chart, three people are labelled “leader.”', source: 'slide' },
+        { text: 'Leadership is spread out: in the chart, three people are highlighted rather than one.', source: 'slide' },
       ],
       practices: [
         { text: 'Approaches from earlier levels are combined according to circumstances.', source: 'table' },
         { text: 'An “integral” approach.', source: 'slide' },
-        { text: 'Self-realization for everyone.', source: 'slide' },
+        { text: 'Self-actualization for everyone.', source: 'slide' },
       ],
       strengths: [{ text: 'Alignment of goals, rules, strategies and relationships.', source: 'table' }],
       tensions: [
@@ -464,24 +432,21 @@ export const levels: Level[] = [
     dimensions: {
       authority: { text: 'Several leaders; leadership follows the situation.', source: 'slide' },
       rules: { text: 'Chosen to fit the context, drawing on earlier levels.', source: 'table' },
-      incentives: { text: 'Learning and self-realization.', source: 'slide' },
+      incentives: { text: 'Learning and self-actualization.', source: 'slide' },
       cooperation: { text: 'Distinct talents integrated into a whole.', source: 'dinan' },
     },
     screenshot: {
       src: 'assets/levels/07-yellow.png',
-      originalFilename: 'levels/yellow.png',
-      width: 1316,
-      height: 881,
-      headingRu: 'ТВОРЧЕСТВО',
-      headingEn: 'Creativity',
-      lines: [
-        { ru: 'Интегральный', en: 'Integral' },
-        { ru: 'Самореализация каждого', en: 'Self-realization of everyone' },
-        { ru: 'Лидер – игрок, созидатель', en: 'Leader as player, creator' },
+      originalFilename: 'levels_modified/yellow.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Creativity',
+      labels: [
+        'Integral',
+        'Self-actualization for everyone',
+        'Leader as player and creator',
       ],
-      chartLabels: [{ ru: 'Лидер', en: 'Leader', note: 'Three people carry this label.' }],
-      diagram:
-        'A shallow structure: a leader linked to two others who are also labelled “leader,” each branching sideways to two more people.',
+      diagram: 'A network of people linked by two-way arrows, with no single person at the top. Three of them are highlighted in yellow.',
     },
   },
 
@@ -504,8 +469,8 @@ export const levels: Level[] = [
       principle: 'Self-organization',
       emphasis: 'Self-organization and responsibility',
       leadership: [
-        { text: 'No managers (нет руководителей).', source: 'slide' },
-        { text: '“Multiple leadership”: leadership is shared rather than held by one role.', source: 'slide' },
+        { text: 'No managers.', source: 'slide' },
+        { text: '“Distributed leadership”: leadership is shared rather than held by one role.', source: 'slide' },
       ],
       practices: [
         { text: 'Employees take responsibility for processes and coordinate their own contributions.', source: 'table' },
@@ -526,27 +491,23 @@ export const levels: Level[] = [
         'The video’s title refers to “Teal organizations,” a term from Frederic Laloux’s book Reinventing Organizations. Laloux’s Teal is a separate model with its own definitions. This site does not treat it as identical to Spiral Dynamics’ Turquoise, and the supplied notes do not record how the video relates the two.',
     },
     dimensions: {
-      authority: { text: 'No managers; leadership is multiple.', source: 'slide' },
+      authority: { text: 'No managers; leadership is distributed.', source: 'slide' },
       rules: { text: 'Harmonic self-coordination.', source: 'table' },
       incentives: { text: 'Aligning individual purpose with the evolution of the whole system.', source: 'dinan' },
       cooperation: { text: 'Self-organizing circles within a larger whole.', source: 'slide' },
     },
     screenshot: {
       src: 'assets/levels/08-turquoise.png',
-      originalFilename: 'levels/torquoise.png',
-      width: 1335,
-      height: 1041,
-      headingRu: 'САМООРГАНИЗАЦИЯ',
-      headingEn: 'Self-organization',
-      lines: [
-        { ru: 'Холистический', en: 'Holistic' },
-        { ru: 'Нет руководителей', en: 'No managers', note: '“Руководитель” means a boss or manager.' },
-        { ru: 'Множественное лидерство', en: 'Multiple leadership' },
+      originalFilename: 'levels_modified/turquoise.png',
+      width: 1448,
+      height: 1086,
+      heading: 'Self-organization',
+      labels: [
+        'Holistic',
+        'No managers',
+        'Distributed leadership',
       ],
-      diagram:
-        'One large circle containing three smaller circles, outlined in yellow, green and orange, each holding three people. There are no reporting lines.',
-      limitations:
-        'A small red label in the bottom-right corner is cropped and illegible. It may belong to the video interface rather than the diagram (not verified).',
+      diagram: 'One large circle containing three smaller circles, outlined in yellow, green and orange, each holding three people. There are no reporting lines.',
     },
   },
 ];

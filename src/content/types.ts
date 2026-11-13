@@ -50,32 +50,19 @@ export interface Dimension {
   summary: string;
 }
 
-/** One line of Russian text visible on a screenshot, with its English meaning. */
-export interface SlideLine {
-  ru: string;
-  en: string;
-  /** Optional clarification of an idiom, pun, or abbreviation. */
-  note?: string;
-}
-
 export interface Screenshot {
   /** Path relative to the site root (resolved against Vite's BASE_URL). */
   src: string;
-  /** The filename as originally supplied, kept for traceability. */
+  /** The source file in source-materials/, kept for traceability. */
   originalFilename: string;
   width: number;
   height: number;
-  /** Slide heading, exactly as shown (Russian). */
-  headingRu: string;
-  headingEn: string;
-  /** Every other legible text line on the slide, in reading order. */
-  lines: SlideLine[];
-  /** Labels inside the slide's org chart, if any. */
-  chartLabels?: SlideLine[];
+  /** Slide heading, as shown on the slide. */
+  heading: string;
+  /** Every other text label on the slide, in reading order. Used in the alt text. */
+  labels: string[];
   /** Plain description of the diagram, for the caption and the alt text. */
   diagram: string;
-  /** Anything cropped, cut off, or illegible. Never reconstructed. */
-  limitations?: string;
 }
 
 export interface GravesSystem {

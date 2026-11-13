@@ -34,7 +34,7 @@ src/
   content/                all text and asset mappings, no UI code
     types.ts              shared content model (Level, SourcedPoint, Screenshot, …)
     levels.ts             the eight levels: Graves / Dinan / Litti Pro layers,
-                          per-dimension notes, screenshot transcription + translation
+                          per-dimension notes, slide heading, labels and diagram description
     site.ts               section copy, dimensions, portrait and figure assets
     sources.ts            source records, source-tag labels, screenshot credit
   lib/                    spiral geometry, color helpers, asset URL, media query hook
@@ -50,7 +50,7 @@ src/
 - `spiralDynamics`: Dinan's theme and a paraphrase
 - `organization`: principle, emphasis, leadership, practices, strengths and tensions. Every bullet carries a `source` tag (`slide`, `table`, `dinan`, `editor`).
 - `dimensions`: one sourced line each for `authority`, `rules`, `incentives` and `cooperation`. These are the four questions in the transition section, and they are meant as the axes for a later company-assessment module (not built in this milestone).
-- `screenshot`: path, original filename, pixel size, the Russian slide text with English meanings, a diagram description, and any cropped or illegible parts.
+- `screenshot`: path, source filename, pixel size, the slide heading, its text labels (used for the alt text) and a diagram description. The slides are the English versions from `source-materials/levels_modified/`.
 
 To change wording, edit the content files only.
 
