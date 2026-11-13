@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Theory } from './components/Theory';
 import { Transition } from './components/Transition';
 import { Explorer } from './components/Explorer';
+import { Assessment } from './components/Assessment';
 import { References } from './components/References';
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
               <li><a href="#theory">Theory</a></li>
               <li><a href="#organizations">Organizations</a></li>
               <li><a href="#explorer">Explorer</a></li>
+              <li><a href="#assessment">Assessment</a></li>
               <li><a href="#sources">Sources</a></li>
             </ul>
           </nav>
@@ -50,13 +52,14 @@ export default function App() {
         <Theory />
         <Transition onSelect={openInExplorer} />
         <Explorer selected={selected} onSelect={setSelected} />
+        <Assessment onOpenLevel={openInExplorer} />
         <References />
       </main>
       <footer className="site-footer">
         <div className="wrap">
           <p>
-            An educational, non-commercial overview prepared from preliminary research notes. Interpretive framework only; not a
-            company assessment tool.
+            An educational, non-commercial overview prepared from preliminary research notes. Interpretive framework only; the self-assessment is a prompt for
+            reflection, not a validated company diagnosis.
           </p>
         </div>
       </footer>

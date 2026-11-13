@@ -6,7 +6,7 @@ export function References() {
     <section id="sources" className="section references" aria-labelledby="ref-title">
       <div className="wrap">
         <header className="section__head">
-          <p className="section__num">04</p>
+          <p className="section__num">05</p>
           <h2 id="ref-title" className="section__title">
             {references.title}
           </h2>

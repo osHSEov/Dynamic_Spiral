@@ -147,3 +147,16 @@ export interface Source {
   /** Honest notes about what is and is not known about this source. */
   notes?: string;
 }
+
+/** One answer in the self-assessment. Each option points to a single level. */
+export interface AssessmentOption {
+  level: Exclude<LevelId, 'beige'>;
+  text: string;
+}
+
+export interface AssessmentQuestion {
+  id: string;
+  dimension: DimensionId;
+  prompt: string;
+  options: AssessmentOption[];
+}
